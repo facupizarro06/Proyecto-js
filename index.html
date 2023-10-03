@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Feet</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Tienda feet</h1>
+    </header>
+
+    <section class="contenedor">
+        <div class="productos">
+            <div class="producto">
+                <img src="./imagenes/adidas-rojas.jpg" alt="Adidas rojas deportivas">
+                <h2>Adidas Falcon</h2>
+                <p>Precio: $50</p>
+                <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/nike-blancas.jpg" alt="Nike urbanas blancas">
+                <h2>Nike Air Total White</h2>
+                <p>Precio: $60</p>
+                <button class="agregar-carrito" data-id="2">Agregar al Carrito</button>
+            </div>
+
+            <!-- Agrega más productos aquí -->
+
+        </div>
+
+        <div class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito">
+                <!-- Los productos seleccionados se mostrarán aquí -->
+            </ul>
+            <p>Total: <span id="totalCarrito">$0.00</span></p>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
