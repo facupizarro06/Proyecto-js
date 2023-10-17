@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Feet</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Tienda de Calzados</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Tienda feet</h1>
+        <h1>Bienvenido a la Tienda de Calzados</h1>
     </header>
 
     <section class="contenedor">
         <div class="productos">
             <div class="producto">
-                <img src="./imagenes/adidas-rojas.jpg" alt="Adidas rojas deportivas">
-                <h2>Adidas Falcon</h2>
-                <p>Precio: $50</p>
+                <img src="./imagenes/adidas-rojas.jpg" alt="adidas rojas">
+                <h2>Adidas Falcon rojas</h2>
+                <p>Precio: $5000</p>
                 <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <img src="./imagenes/nike-blancas.jpg" alt="Nike urbanas blancas">
-                <h2>Nike Air Total White</h2>
-                <p>Precio: $60</p>
+                <img src="./imagenes/nike-blancas.jpg" alt="nike blancas">
+                <h2>Nike Air Force Total White</h2>
+                <p>Precio: $6000</p>
                 <button class="agregar-carrito" data-id="2">Agregar al Carrito</button>
             </div>
 
@@ -38,6 +38,8 @@
             </ul>
             <p>Total: <span id="totalCarrito">$0.00</span></p>
             <button id="vaciarCarrito">Vaciar Carrito</button>
+            <button id="finalizarCompra">Finalizar Compra</button>
+            <p id="ordenCompra" style="display: none;"></p>
         </div>
     </section>
 

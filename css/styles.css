@@ -49,6 +49,7 @@ h1 {
 
 /* Estilos para el carrito */
 .carrito {
+   
     flex: 1;
     text-align: center;
 }
@@ -74,4 +75,38 @@ ul {
 
 #vaciarCarrito:hover {
     background-color: #555;
+}
+
+/* Estilos para los botones */
+.agregar-carrito {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #45a049;
+}
+
+.eliminar,
+.aumentar,
+.disminuir {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.eliminar:hover,
+.aumentar:hover,
+.disminuir:hover {
+    background-color: #d32f2f;
 }
