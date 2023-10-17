@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,7 +27,7 @@ h1 {
     justify-content: space-between;
 }
 
-/* Estilos para los productos */
+/* productos */
 .productos {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ h1 {
     height: auto;
 }
 
-/* Estilos para el carrito */
+/*carrito */
 .carrito {
    
     flex: 1;
@@ -77,7 +77,7 @@ ul {
     background-color: #555;
 }
 
-/* Estilos para los botones */
+/* botones */
 .agregar-carrito {
     background-color: #4CAF50;
     color: #fff;

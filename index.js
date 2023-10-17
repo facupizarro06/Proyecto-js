@@ -1,10 +1,10 @@
-// Obtener elementos del DOM
+// DOM
 const agregarCarritoBtns = document.querySelectorAll('.agregar-carrito');
 const vaciarCarritoBtn = document.getElementById('vaciarCarrito');
 const listaCarrito = document.getElementById('listaCarrito');
 const totalCarrito = document.getElementById('totalCarrito');
 
-// Función para agregar un producto al carrito
+//Agregar un producto al carrito
 function agregarAlCarrito(productoId) {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const producto = productos.find(p => p.id === productoId);
@@ -23,7 +23,7 @@ function agregarAlCarrito(productoId) {
     }
 }
 
-// Función para eliminar un producto del carrito
+// Eliminar un producto 
 function eliminarDelCarrito(productoId) {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const nuevoCarrito = carrito.filter(producto => producto.id !== productoId);
@@ -31,7 +31,7 @@ function eliminarDelCarrito(productoId) {
     mostrarCarrito();
 }
 
-// Función para mostrar el carrito de compras
+// Mostrar el carrito de compras
 function mostrarCarrito() {
     listaCarrito.innerHTML = '';
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -80,7 +80,7 @@ vaciarCarritoBtn.addEventListener('click', () => {
     mostrarCarrito();
 });
 
-// Función para aumentar la cantidad de un producto en el carrito
+// Aumentar la cantidad de un producto
 function aumentarCantidad(productoId) {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const productoEnCarrito = carrito.find(item => item.id === productoId);
@@ -91,7 +91,7 @@ function aumentarCantidad(productoId) {
     }
 }
 
-// Función para disminuir la cantidad de un producto en el carrito
+// Disminuir la cantidad de un producto 
 function disminuirCantidad(productoId) {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const productoEnCarrito = carrito.find(item => item.id === productoId);
@@ -101,7 +101,7 @@ function disminuirCantidad(productoId) {
         mostrarCarrito();
     }
 }
-// Función para finalizar la compra
+//  FuncionF finalizar la compra
 function finalizarCompra() {
     const ordenCompra = Math.floor(Math.random() * 1000000); // Generar un número de orden aleatorio
     document.getElementById('ordenCompra').textContent = `Número de Orden de Compra: #${ordenCompra}`;
@@ -110,14 +110,14 @@ function finalizarCompra() {
     mostrarCarrito();
 }
 
-// Evento para finalizar la compra
+// Evento finalizar la compra
 document.getElementById('finalizarCompra').addEventListener('click', finalizarCompra);
 
-// Datos de ejemplo de productos (puedes modificarlos o cargarlos desde una fuente externa)
+// Datos de productos
 const productos = [
     { id: 1, nombre: 'Adidas Falcon', precio: 5000 },
     { id: 2, nombre: 'Nike Air Force Total White', precio: 6000 },
-    // Agrega más productos aquí
+   
 ];
 
 // Inicialización al cargar la página
